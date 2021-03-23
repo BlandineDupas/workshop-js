@@ -1,0 +1,11 @@
+#errors {
+    background-color: rgba(255, 0, 0, 0.384);
+    padding: 1rem;
+    list-style-type: none;
+    font-weight: bold;
+    line-height: 1.6rem;
+}
+
+.d-none {
+    display: none;
+}

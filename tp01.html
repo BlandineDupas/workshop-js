@@ -1,0 +1,58 @@
+<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Contact</title>
+</head>
+<body>
+    <nav>
+        <a href="tp01.html">
+            <li>TP 01</li>
+        </a>
+    </nav>
+
+    <main>
+        <h2>Nous contacter</h2>
+        <ul id="errors" class="d-none"></ul>
+        <form action="" method="post" id="contactForm">
+
+            <fieldset>
+                <legend>Votre identité</legend>
+                <label for="lastname">Nom :
+                    <input type="text" name="lastname" id="lastname" placeholder="ex: Dupont" minlength="4">
+                </label>
+                <label for="firstname">Prénom :
+                    <input type="text" name="firstname" id="firstname" placeholder="ex: Marcel" minlength="4">
+                </label>
+                <label for="age">Age :
+                    <input type="number" name="age" id="age" placeholder="ex: 10">
+                </label>
+            </fieldset>
+            <fieldset>
+                <legend>Vos coordonnées</legend>
+                <label for="email">Email :
+                    <input type="email" name="email" id="email" placeholder="ex: marcel.dupont@gmail.com" minlength="5" pattern="^[a-z0-9][a-z0-9\.-]*@[a-z]+\.[a-z]{2,3}$">
+                </label>
+                <label for="tel">Téléphone :
+                    <input type="tel" name="tel" id="tel" placeholder="ex: 0602548745" minlength="10" maxlength="10" pattern="^\d{10}$">
+                </label>
+                <label for="channel">Vous préférez être contacté par :
+                    <select name="channel" id="channel">
+                        <option value="email" selected>Mail</option>
+                        <option value="tel">Téléphone</option>
+                    </select>
+                </label>
+            </fieldset>
+            <fieldset>
+                <legend>Votre message</legend>
+                    <textarea name="message" id="message" cols="120" rows="10" placeholder="Ecrivez votre message ici" maxlength="200"></textarea>
+            </fieldset>
+            <button type="submit">Envoyer</button>
+
+        </form>
+    </main>
+
+    <script type="text/javascript" src="js/tp01.js"></script>
+
+</body>
+</html>
