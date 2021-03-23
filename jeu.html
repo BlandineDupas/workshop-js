@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Plus Petit ou Plus Grand</title>
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/jeu.css">
+	</head>
+	<body onload="initElement1(); initElement2(); initElement3()">
+        <nav>
+            <a href="tp01.html">
+                <li>TP 01</li>
+            </a>
+            <a href="jeu.html">
+                <li>Nombre Aléatoire</li>
+            </a>
+        </nav>
+		<main>
+			<h1>Mon premier jeu en javascript...</h1>
+			<h2>Règle du jeu</h2>
+			<p>
+				Il s'agit de trouver un nombre secret entre 1 et 1000 compris.
+			</p>
+			<h2>Comment jouer ?</h2>
+			<p>
+				Pour jouer, rien de plus simple : cliquez sur la version qui vous tente et laissez-vous guider...
+			</p>
+			<p>
+				<strong>Version 1 et 2</strong> : pour jouer, la page doit avoir été chargée juste avant (sinon, ce sera le même nombre qu'avant).
+			</p>
+			<p>
+				<strong>Version 3</strong> : le nombre change à chaque fois qu'on clique sur le bouton.
+			</p>
+			<section>
+				<div>
+					<h2> Version 1</h2>
+					<p>
+						Pour ce jeu, pas de limites ! 
+					</p>
+					<p>
+						Vous continuez à chercher jusqu'à ce que vous trouviez (ou quittiez la page...)
+					</p>
+					<p class="gameOnClick" id="game1">Jouer à la version 1</p>
+				</div>
+				<div>
+					<h2> Version 2</h2>
+					<p>
+						Pour ce jeu, vous êtes limités à <strong>10 tentatives</strong>. 
+					</p>
+					<p>
+						Réfléchissez bien !
+					</p>
+					<p class="gameOnClick" id="game2">Jouer à la version 2</p>
+
+				</div>
+				<div>
+					<h2> Version 3</h2>
+					<p>
+						Pour ce jeu, vous commencez par <strong>choisir vous-même</strong> les bornes... 
+					</p>
+					<p>
+						<strong>De plus</strong>, vous choisissez votre nombre d'essais maximum...
+					</p>
+					<p class="gameOnClick" id="game3">Jouer à la version 3</p>
+
+				</div>
+			</section>
+		</main>
+		<script src="js/jeu.js"></script>
+	</body>
+</html>
