@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>workshop-js</title>
+</head>
+<body>
+    <nav>
+        <a href="tp01.html">
+            <li>TP 01</li>
+        </a>
+        <a href="nbAleatoire.html">
+            <li>Nombre Aléatoire</li>
+        </a>
+        <a href="objStr.html">
+            <li>Objet en chaîne de caractères</li>
+        </a>
+        <a href="salary.html">
+            <li>Calculateur de salaire</li>
+        </a>
+    </nav>
+
+    <main>
+        <h1>Calculateur de salaire</h1>
+        <ul id="errors"></ul>
+        <form action="" id="salaryForm">
+            <fieldset>
+                <legend><label for="grossSalary">Salaire Brut</label></legend>
+                <input type="number" name="grossSalary" id="grossSalary">
+            </fieldset>
+            <fieldset>
+                <legend>Bonus</legend>
+                <label for="bonus-0">0 $</label>
+                <input type="radio" name="bonus" id="bonus-0" value="0" checked>
+                <label for="bonus-100">100 $</label>
+                <input type="radio" name="bonus" id="bonus-100" value="100">
+            </fieldset>
+            <fieldset>
+                <legend>Allocation</legend>
+                <label for="allowance-0">0 $</label>
+                <input type="radio" name="allowance" id="allowance-0" value="0" checked>
+                <label for="allowance-150">150 $</label>
+                <input type="radio" name="allowance" id="allowance-150" value="150">
+            </fieldset>
+            <fieldset>
+                <legend>Sexe</legend>
+                <label for="male">Homme</label>
+                <input type="radio" name="gender" id="male" value="male">
+                <label for="female">Femme</label>
+                <input type="radio" name="gender" id="female" value="female">
+            </fieldset>
+            <fieldset>
+                <legend><label for="dependants">Personnes à charge</label></legend>
+                <input type="number" name="dependants" id="dependants">
+            </fieldset>
+            <button type="submit">Calculer mon salaire net !</button>
+        </form>
+        <fieldset id="result">
+            <legend>Résultat :</legend>
+        </fieldset>
+    </main>
+
+    <script src="js/salary.js"></script>
+</body>
+</html>
